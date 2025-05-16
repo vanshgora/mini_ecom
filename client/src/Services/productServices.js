@@ -1,6 +1,6 @@
 const addProduct = async (formData) => {
     try {
-        const res = await fetch('http://localhost:3000/api/products', {
+        const res = await fetch('https://mini-ecom-bdwv.onrender.com/api/products', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)
@@ -14,7 +14,7 @@ const addProduct = async (formData) => {
 
 const getProducts = async () => {
     try {
-        const response = fetch('http://localhost:3000/api/products');
+        const response = fetch('https://mini-ecom-bdwv.onrender.com/api/products');
         return response
     } catch (error) {
         throw (error)
@@ -24,7 +24,7 @@ const getProducts = async () => {
 const searchContextual = async (query) => {
     try {
 
-        const response = fetch('http://localhost:3000/api/products/contextual-search', {
+        const response = fetch('https://mini-ecom-bdwv.onrender.com/api/products/contextual-search', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })
