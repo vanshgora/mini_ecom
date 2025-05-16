@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT|| 3000;
 
 app.use(cors({
-  origin: 'https://mini-ecom-rose.vercel.app/', 
+  origin: 'https://mini-ecom-rose.vercel.app', 
   credentials: true
 }));
 app.use(express.json());
